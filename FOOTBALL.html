@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Fanatics</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #1c1c1c;
+            color: #f3f3f3;
+        }
+
+        header {
+            background-color: #ff4500;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            padding: 0.5rem 0;
+            background-color: #d43f00;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffe5d9;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 2rem;
+            background-image: url('https://source.unsplash.com/1600x900/?football');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero h2 {
+            margin: 0;
+            font-size: 3rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        .content {
+            padding: 2rem;
+        }
+
+        .content h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .card .info {
+            padding: 1rem;
+        }
+
+        .card .info h4 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        .card .info p {
+            margin: 0.5rem 0 0;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        footer {
+            background-color: #d43f00;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Football Fanatics</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Teams</a>
+        <a href="#">Schedule</a>
+        <a href="#">About</a>
+    </nav>
+    <section class="hero">
+        <h2>Welcome to the World of Football</h2>
+        <p>Your ultimate destination for football news, updates, and fan moments.</p>
+    </section>
+    <section class="content">
+        <h3>Top Football Teams</h3>
+        <div class="cards">
+            <a href="https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_xl_2x/f_auto/primary/ngdjbafv3twathukjbq2" target="_blank" class="card">
+                <img src="https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_xl_2x/f_auto/primary/ngdjbafv3twathukjbq2" alt="Team A Image">
+                <div class="info">
+                    <h4>Team A</h4>
+                    <p>Explore the journey of one of the most celebrated teams in football history.</p>
+                </div>
+            </a>
+            <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtWul38MKK5oF707D82H8SP2u509Vui9iCWw&s" target="_blank" class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtWul38MKK5oF707D82H8SP2u509Vui9iCWw&s" alt="Team B Image">
+                <div class="info">
+                    <h4>Team B</h4>
+                    <p>A powerhouse of talent and legacy in the football world.</p>
+                </div>
+            </a>
+            <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlOeOcpIFsbDMrqa58MwQv9l2NCq8HkoxY1Q&s" target="_blank" class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlOeOcpIFsbDMrqa58MwQv9l2NCq8HkoxY1Q&s" alt="Team C Image">
+                <div class="info">
+                    <h4>Team C</h4>
+                    <p>An epic story of victories, challenges, and passion for football.</p>
+                </div>
+            </a>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Football Fanatics. All rights reserved.</p>
+    </footer>
+</body>
+</html>
